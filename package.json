@@ -1,0 +1,88 @@
+{
+  "name": "project-home-alone",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.4.1",
+    "react-addons-pure-render-mixin": "^15.4.1",
+    "react-dom": "^15.4.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-import-resolver-meteor": "^0.3.4",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-meteor": "^4.0.1",
+    "eslint-plugin-react": "^6.8.0"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "allowImportExportEverywhere": true
+    },
+    "plugins": [
+      "meteor"
+    ],
+    "extends": [
+      "airbnb",
+      "plugin:meteor/recommended"
+    ],
+    "settings": {
+      "import/resolver": "meteor"
+    },
+    "rules": {
+      "linebreak-style": 0,
+      "comma-dangle": [
+        2,
+        "always-multiline"
+      ],
+      "max-len": [
+        2,
+        120
+      ],
+      "indent": [
+        2,
+        4,
+        {
+          "SwitchCase": 1,
+          "VariableDeclarator": 1,
+          "outerIIFEBody": 1
+        }
+      ],
+      "no-restricted-syntax": [
+        2,
+        "DebuggerStatement",
+        "LabeledStatement",
+        "WithStatement"
+      ],
+      "arrow-body-style": 1,
+      "react/jsx-indent": [
+        2,
+        4
+      ],
+      "react/jsx-filename-extension": [
+        2,
+        {
+          "extensions": [
+            ".jsx",
+            ".js"
+          ]
+        }
+      ],
+      "react/jsx-indent-props": [
+        2,
+        4
+      ],
+      "react/prefer-stateless-function": 0,
+      "react/jsx-no-bind": 1
+    },
+    "globals": {
+      "document": true
+    }
+  }
+}
